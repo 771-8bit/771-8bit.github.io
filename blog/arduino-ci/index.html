@@ -263,6 +263,9 @@ originUl.parentNode.replaceChild(ul,originUl);}});</script><link rel=stylesheet 
 </span><span class=lnt>156
 </span><span class=lnt>157
 </span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
 </span></code></pre></td><td class=lntd><pre class=chroma><code class=language-yml data-lang=yml><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Arduino CI</span><span class=w>
 </span><span class=w>
 </span><span class=w></span><span class=nt>on</span><span class=p>:</span><span class=w>
@@ -347,7 +350,7 @@ originUl.parentNode.replaceChild(ul,originUl);}});</script><link rel=stylesheet 
 </span><span class=w>      </span><span class=nt>with</span><span class=p>:</span><span class=w>
 </span><span class=w>        </span><span class=nt>github_token</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.github_token }}</span><span class=w>
 </span><span class=w>        </span><span class=nt>reporter</span><span class=p>:</span><span class=w> </span><span class=l>github-pr-review</span><span class=w>
-</span><span class=w>        </span><span class=nt>flags</span><span class=p>:</span><span class=w> </span>--<span class=l>linelength=50</span><span class=w> </span><span class=c># Optional</span><span class=w>
+</span><span class=w>        </span><span class=nt>flags</span><span class=p>:</span><span class=w> </span>--<span class=l>extensions=h,hpp,c,cpp,cc,cu,hh,ipp,ino</span><span class=w>
 </span><span class=w>        </span><span class=nt>filter</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;-readability/braces\
 </span><span class=s2>          ,-whitespace/braces\
 </span><span class=s2>          ,-whitespace/comments\
@@ -355,6 +358,9 @@ originUl.parentNode.replaceChild(ul,originUl);}});</script><link rel=stylesheet 
 </span><span class=s2>          ,-whitespace/newline\
 </span><span class=s2>          ,-whitespace/operators\
 </span><span class=s2>          ,-whitespace/parens\
+</span><span class=s2>          ,-whitespace/tab\
+</span><span class=s2>          ,-whitespace/line_length\
+</span><span class=s2>          ,-build/header_guard\
 </span><span class=s2>          &#34;</span><span class=w> </span><span class=c># Optional</span><span class=w>
 </span><span class=w>
 </span><span class=w>  </span><span class=nt>build</span><span class=p>:</span><span class=w>
